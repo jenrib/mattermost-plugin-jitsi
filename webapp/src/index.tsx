@@ -44,7 +44,7 @@ class PluginClass {
             (channel: Channel) => {
                 store.dispatch(startMeeting(channel.id));
             },
-            'Start Jitsi Meeting'
+            'Start Assembly Meeting'
         );
         Client.setServerRoute(getServerRoute(store.getState()));
         registry.registerPostTypeComponent('custom_jitsi', (props: { post: Post }) => (

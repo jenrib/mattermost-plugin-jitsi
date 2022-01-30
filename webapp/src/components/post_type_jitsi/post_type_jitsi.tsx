@@ -131,7 +131,7 @@ export class PostTypeJitsi extends React.PureComponent<Props, State> {
         let title = (
             <FormattedMessage
                 id='jitsi.default-title'
-                defaultMessage='Jitsi Meeting'
+                defaultMessage='Assemblies Meeting'
             />
         );
         if (props.meeting_topic) {
