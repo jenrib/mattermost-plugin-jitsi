@@ -216,7 +216,7 @@ func (p *Plugin) startMeeting(user *model.User, channel *model.Channel, meetingI
 	meetingPersonal := false
 	defaultMeetingTopic := p.b.LocalizeDefaultMessage(l, &i18n.Message{
 		ID:    "jitsi.start_meeting.default_meeting_topic",
-		Other: "Jitsi Meeting",
+		Other: "Assemblies Meeting",
 	})
 
 	if len(meetingTopic) < 1 {
@@ -413,7 +413,7 @@ func (p *Plugin) askMeetingType(user *model.User, channel *model.Channel, rootID
 			URL: apiURL,
 			Context: map[string]interface{}{
 				"meeting_id":    generateEnglishTitleName(),
-				"meeting_topic": "Jitsi Meeting",
+				"meeting_topic": "Assemblies Meeting",
 				"personal":      true,
 			},
 		},
@@ -466,7 +466,7 @@ func (p *Plugin) askMeetingType(user *model.User, channel *model.Channel, rootID
 			URL: apiURL,
 			Context: map[string]interface{}{
 				"meeting_id":    generateUUIDName(),
-				"meeting_topic": "Jitsi Meeting",
+				"meeting_topic": "Assemblies Meeting",
 				"personal":      false,
 			},
 		},
@@ -476,7 +476,7 @@ func (p *Plugin) askMeetingType(user *model.User, channel *model.Channel, rootID
 		Title: p.b.LocalizeWithConfig(l, &i18n.LocalizeConfig{
 			DefaultMessage: &i18n.Message{
 				ID:    "jitsi.ask.title",
-				Other: "Jitsi Meeting Start",
+				Other: "Assemblies Meeting Start",
 			},
 		}),
 		Text: p.b.LocalizeWithConfig(l, &i18n.LocalizeConfig{

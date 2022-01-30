@@ -435,7 +435,7 @@ exports[`PostTypeJitsi should render the default topic if the topic is empty 1`]
   }
 >
   <FormattedMessage
-    defaultMessage="Jitsi Meeting"
+    defaultMessage="Assemblies Meeting"
     id="jitsi.default-title"
     values={Object {}}
   />
